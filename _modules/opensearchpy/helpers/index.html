@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>opensearchpy.helpers.index &mdash; OpenSearch Python Client  documentation</title>
-      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/copybutton.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/css/custom.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/custom.css" />
+
+  
   <!--[if lt IE 9]>
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -80,8 +82,7 @@
            <div itemprop="articleBody">
              
   <h1>Source code for opensearchpy.helpers.index</h1><div class="highlight"><pre>
-<span></span><span class="c1"># -*- coding: utf-8 -*-</span>
-<span class="c1"># SPDX-License-Identifier: Apache-2.0</span>
+<span></span><span class="c1"># SPDX-License-Identifier: Apache-2.0</span>
 <span class="c1">#</span>
 <span class="c1"># The OpenSearch Contributors require contributions made to</span>
 <span class="c1"># this file be licensed under the Apache-2.0 license or a</span>
@@ -361,7 +362,9 @@
             <span class="n">using</span><span class="o">=</span><span class="n">using</span> <span class="ow">or</span> <span class="bp">self</span><span class="o">.</span><span class="n">_using</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_name</span><span class="p">,</span> <span class="n">doc_type</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_doc_types</span>
         <span class="p">)</span></div>
 
-<div class="viewcode-block" id="Index.updateByQuery"><a class="viewcode-back" href="../../../api-ref/helpers/index.html#opensearchpy.helpers.index.Index.updateByQuery">[docs]</a>    <span class="k">def</span> <span class="nf">updateByQuery</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">using</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">OpenSearch</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">UpdateByQuery</span><span class="p">:</span>
+<div class="viewcode-block" id="Index.updateByQuery"><a class="viewcode-back" href="../../../api-ref/helpers/index.html#opensearchpy.helpers.index.Index.updateByQuery">[docs]</a>    <span class="k">def</span> <span class="nf">updateByQuery</span><span class="p">(</span>  <span class="c1"># pylint: disable=invalid-name</span>
+        <span class="bp">self</span><span class="p">,</span> <span class="n">using</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">OpenSearch</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">UpdateByQuery</span><span class="p">:</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Return a :class:`~opensearchpy.UpdateByQuery` object searching over the index</span>
 <span class="sd">        (or all the indices belonging to this template) and updating Documents that match</span>
