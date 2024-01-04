@@ -9,6 +9,8 @@
 
 OpenSearch Python Client
 
+[benchmarks](./benchmarks)
+
 - [Welcome!](https://github.com/opensearch-project/opensearch-py#welcome)
 - [User Guide](https://github.com/opensearch-project/opensearch-py#user-guide)
 - [API Doc](https://opensearch-project.github.io/opensearch-py/)
